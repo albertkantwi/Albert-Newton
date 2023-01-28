@@ -1,1 +1,4 @@
-# Albert-Newton
+# Microverse Trials
+
+## Albert Antwi
+## Newton Ombese
