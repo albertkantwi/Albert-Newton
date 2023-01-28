@@ -31,3 +31,21 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
 
 
 // Newton's solution
+
+function breakingRecords(scores){
+    let highestScore = scores[0];
+    let lowestScore = scores[0];
+    let higherCount = 0;
+    let lowerCount = 0;
+    for(let i = 1; i < scores.length; i++){
+        if(scores[i] > highestScore){
+            highestScore = scores[i];
+            higherCount++
+        }
+        else if(scores[i] < lowestScore){
+            lowestScore = scores[i];
+            lowerCount++
+        }
+    }
+    return [higherCount, lowerCount];
+}
