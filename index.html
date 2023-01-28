@@ -1,1 +1,97 @@
-<h1>Hello, World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Albert & Newton Survey Form
+            </h1>
+            <p id="description" class="description">Kindly take time to fill our survey form</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age<span class="hint">(optional)</span></label>
+                <input type="number" class="form-control" name="age" id="number" placeholder="Your Age" min="14" max="99" required>
+            </div>
+            <div class="form-group">
+                <p>Which language do you program in?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="python">Python</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="javascript">Javascript</option>
+                    <option value="php">PHP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you advice your friend to start programming?</p>
+                <label>
+                    <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked />Definitely
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="maybe" class="input-radio"/>Maybe
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="not-at-all" class="input-radio"/>Not at all
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Which IT field do you love working on?</p>
+                <select name="mostLike" id="most-like" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="cyber-security">Cyber Security</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved in the future?<span class="hint">(Check all that apply)</span></p>
+                <label>
+                    <input type="checkbox" name="prefer" value="front-end-projects" class="input-checkbox" />Front-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="back-end-projects" class="input-checkbox"/>Back-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="challenges" class="input-checkbox"/>Challenges
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="data-visualisation" class="input-checkbox" />Data Visualisation
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="open-source-community" class="input-checkbox"/>Open Source Community
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="tech-meetups" class="input-checkbox"/>Tech Meetups
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="more-courses" class="input-checkbox"/>More Courses
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions you have?</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment or suggestion here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
